@@ -116,6 +116,8 @@ Example request:
 
 The embeddings for all 3 pdfs chunks were generated using the `scripts/build-index.ts` script.
 
+If you want to use different PDF documents, just place your own PDF files into the assets/pdfs/ folder, and run `npm run reindex` to generate a new index.
+
 `simThreshold` and `topK` parameters can be tuned in config/app.ts
 
 The system prompt explicitly instructs the LLM to avoid summarization and to remain fully grounded in the retrieved content

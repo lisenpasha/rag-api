@@ -6,7 +6,8 @@
     "dev": "tsx src/app/server.ts",
     "build": "tsc -p .",
     "start": "node dist/app/server.js",
-    "build:index": "tsx scripts/build-index.ts"
+    "build:index": "tsx scripts/build-index.ts",
+    "reindex": "rm -f assets/index/index.json && tsx scripts/build-index.ts"
   },
   "keywords": [],
   "author": "",
