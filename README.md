@@ -27,7 +27,7 @@ All embeddings and chunks are precomputed and stored as JSON files, so the API c
 - Threshold-based filtering to avoid hallucinations / irrelevant chunks
 - Clear system message to force the LLM to stay grounded in the retrieved content
 - **Swagger UI** included (`/api-docs`) to test directly from the browser
-- Precomputed JSON index → no need for manual chunking / embedding at startup
+- Precomputed JSON index → no need for manual chunking / embedding at startup.
 
 ---
 
@@ -113,6 +113,8 @@ Example request:
    → The LLM answer is returned along with the source PDF name and chunk index for each chunk that was used (traceability).
 
 ## Notes
+
+The embeddings for all 3 pdfs chunks were generated using the `scripts/build-index.ts` script.
 
 `simThreshold` and `topK` parameters can be tuned in config/app.ts
 
