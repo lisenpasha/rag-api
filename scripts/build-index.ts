@@ -12,7 +12,7 @@ const openai = new OpenAI({
 const PDF_DIR = path.join(__dirname, '../assets/pdfs');
 const INDEX_FILE = path.join(__dirname, '../assets/index/index.json');
 
-// Chunk size (words)
+// Chunk size (number of words per chunk)
 const CHUNK_SIZE = 300;
 
 async function readPdfText(filePath: string): Promise<string> {

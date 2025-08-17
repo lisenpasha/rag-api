@@ -1,6 +1,5 @@
 /**
- * Cosine similarity between two vectors of equal length.
- * NOTE: OpenAI's `text-embedding-3-small` model returns vectors with 1536 dimensions.
+ * Cosine similarity score calculation between two vectors of equal length.
  */
 export function cosine(a: number[], b: number[]): number {
   let dot = 0;
